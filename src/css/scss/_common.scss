@@ -1,6 +1,6 @@
 $color-dark: #555;
 $color-darker: #222;
-$color-light: #c0c0c0;
+$color-light: tan;
 $color-lighter: #dadada;
 $font-fam: 'Trebuchet MS', serif;
 
@@ -48,13 +48,14 @@ main {
   @include flex(center, center);
 
   .wrapper {
-    background-color: $color-darker;
-    min-height: 50%;
-    max-width: 30rem;
-    width: 50vw;
-    padding: 2rem;
+    background-color: #222;
     border-radius: 1rem;
-    box-shadow: 0 4rem 2rem -3rem rgba(0, 0, 0, 0.2);
+    border: 1px solid tan;
+    box-shadow: 0 4rem 2rem -3rem #0003;
+    max-width: 30rem;
+    min-height: 50%;
+    padding: 2rem;
+    width: 50vw;
 
     @include flex(center, center);
   }
