@@ -337,15 +337,15 @@ a {
 }
 
 .body {
-  font-family: "Trebuchet MS", serif;
   background-color: #555;
   color: tan;
+  font-family: "Trebuchet MS", serif;
   line-height: 1.5;
   transition: all 0.3s ease;
 }
 .body.light {
-  background-color: tan;
   color: #555;
+  background-color: tan;
 }
 .body.light .wrapper {
   background-color: #dadada;
@@ -374,29 +374,42 @@ main .wrapper {
   border-radius: 1rem;
   border: 1px solid tan;
   box-shadow: 0 4rem 2rem -3rem rgba(0, 0, 0, 0.2);
-  max-width: 30rem;
-  min-height: 50%;
+  height: auto;
+  max-width: 70vw;
   padding: 2rem;
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  main .wrapper {
+    max-width: 40vw;
+  }
+}
+@media (min-width: 1260px) {
+  main .wrapper {
+    max-width: 40vw;
+  }
+}
 main .text {
-  font-size: 1.5rem;
-  padding-left: 1.5rem;
-  border-left: 0.1rem solid #555;
+  font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+  main .text {
+    font-size: 1.5rem;
+  }
 }
 
 .quotes .author {
-  text-transform: uppercase;
-  letter-spacing: 1rem;
   font-size: 120%;
+  letter-spacing: 1rem;
   margin-bottom: 3rem;
+  text-transform: uppercase;
 }
 .quotes .quote-inner {
-  overflow-y: scroll;
   max-height: 20rem;
+  overflow-y: scroll;
 }
 
 .quote .details {
@@ -413,17 +426,18 @@ main .text {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
   left: 50%;
-  text-align: center;
   margin-right: -50%;
-  transform: translateX(-50%);
-  opacity: 0.6;
+  opacity: 0.1;
+  position: fixed;
   padding: 0.6rem;
+  text-align: center;
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease;
 }
 footer:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 footer a {
   color: #222;
