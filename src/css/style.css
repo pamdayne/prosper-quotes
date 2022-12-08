@@ -339,12 +339,12 @@ a {
 .body {
   font-family: "Trebuchet MS", serif;
   background-color: #555;
-  color: #c0c0c0;
+  color: tan;
   line-height: 1.5;
   transition: all 0.3s ease;
 }
 .body.light {
-  background-color: #c0c0c0;
+  background-color: tan;
   color: #555;
 }
 .body.light .wrapper {
@@ -371,12 +371,13 @@ main {
 }
 main .wrapper {
   background-color: #222;
-  min-height: 50%;
-  max-width: 30rem;
-  width: 50vw;
-  padding: 2rem;
   border-radius: 1rem;
+  border: 1px solid tan;
   box-shadow: 0 4rem 2rem -3rem rgba(0, 0, 0, 0.2);
+  max-width: 30rem;
+  min-height: 50%;
+  padding: 2rem;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
