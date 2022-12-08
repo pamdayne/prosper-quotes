@@ -6,5 +6,12 @@
 _A project by pamdayne._
 _Suggested by DiehardOfDeath_
 
+___
 
-Please use [Parcel](https://parceljs.org/) to set this is up locally.
+## Setting up
+1. Pull this repo into your local machine
+2. Run `npm i` in your terminal at this projects local directory
+
+## Running local server
+1. Run `npx parcel src/index.html`.
+2. Access the localhost page shown in the terminal.
